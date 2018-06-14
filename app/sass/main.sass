@@ -1,0 +1,630 @@
+@import "bourbon"
+@import "bootstrap/bootstrap"
+
+@import "fonts"
+@import "vars"
+@import "button"
+@import "mixins"
+
+
+@import "templates/news"
+@import "templates/video"
+@import "templates/portfolio"
+
+@import "templates/modals"
+
+
+@import "lib/swipebox-m"
+@import "../svg/symbol/sprite"
+
+/* @import "mixins" */
+
+*::-webkit-input-placeholder 
+	color: #4a5359
+	font-size: 13px
+	opacity: 1
+
+*:-moz-placeholder
+	color: #4a5359
+	font-size: 13px
+	opacity: 1
+ 
+*::-moz-placeholder
+	color: #4a5359
+	font-size: 13px
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #4a5359
+	font-size: 13px	
+	opacity: 1 
+*
+	box-sizing: border-box
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid  
+	color: #666
+body input:focus::-webkit-input-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+
+body input:focus::-moz-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+body input:focus:-moz-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+body input:focus:-ms-input-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease	
+
+body textarea:focus::-webkit-input-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+body textarea:focus::-moz-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+body textarea:focus:-moz-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+body textarea:focus:-ms-input-placeholder
+	opacity: 0
+	transition: opacity 0.3s ease
+html, body
+	height: 100%
+
+body
+	min-width: 320px
+	font-size: 14px
+	position: relative
+	overflow-x: hidden
+	background-attachment: fixed
+	flex-direction: column
+
+
+section
+	position: relative
+/* 	.container
+		border: 1px solid #eee  */
+
+
+	
+.overlay
+	height: 100%
+	left: 0
+	opacity: 0.80
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: 1000
+	background: rgba(0,0,0,1)
+	display: none
+.open-menu
+	overflow: hidden
+	padding-right: 17px
+	.header
+		padding-right: 17px
+
+.overlay-modals 
+	display: none
+	height: 100%
+	left: 0
+	opacity: 0.50
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: 1000
+	background-color: rgba(0,0,0,0.7)
+
+.hidden
+	display: none
+//--------------------------//
+.section
+	margin-bottom: 50px  
+	position: relative
+	
+
+//--------------------------//	
+
+.blur 
+	position: absolute
+	height: 100%
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none)
+	.blur
+		background: rgba(74, 74, 74, 0.6);
+		-webkit-backdrop-filter: brightness(1.5) blur(4px);
+		backdrop-filter: brightness(1.5) blur(4px);
+
+
+//--------------------------//
+
+
+
+.hover-shadow
+	transition: 0.3s
+	&:hover
+		box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
+
+.bg-black-gray
+	background-color: #2a2a2a
+	display: flex
+	padding-top: 175px
+	.nopage__block
+		height: 380px
+
+@supports(display: flex)	
+	.bg-black-gray
+		padding-top: 0
+		.nopage__block
+			height: auto
+
+
+.bg-casepage
+    background: url(../img/cases/bg-promo-casepage.png) no-repeat;
+    background-position: 35% 50%;
+    background-size: cover;
+    position: relative;
+
+.bg-cases
+    background: url(../img/cases/bg-promo-cases.png) no-repeat;
+    background-position: 35% 50%;
+    background-size: cover;
+    position: relative;
+
+.bg-news
+    background: url(../img/news/bg-promo-news.jpg) no-repeat;
+    background-position: 35% 50%;
+    background-size: cover;
+    position: relative;
+
+.bg-newspage
+    background: url(../img/news/bg-newspage.jpg) no-repeat;
+    background-position: 35% 50%;
+    background-size: cover;
+    position: relative;
+
+.bg-services
+    background: url(../img/services/bg-promo-services.jpg) no-repeat;
+    background-position: 35% 50%;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 28px
+
+.bg-services
+    background: url(../img/services/bg-promo-services-page.jpg) no-repeat;
+    background-position: 35% 50%;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 40px
+
+.bg-video
+    background: url(../img/video/bg-promo-video.jpg) no-repeat;
+    background-position: 35% 50%;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 20px
+
+.bg-about 
+    background: url(../img/home-bg.jpg) no-repeat;
+    background-position: 35% 50%;
+    background-size: cover;
+    position: relative;
+
+.bg-videopage 
+    background: url(../img/home-bg.jpg) no-repeat;
+    background-position: 35% 50%;
+    background-size: cover;
+    position: relative;
+
+//--------------------------//
+
+.header
+	width: 100%
+	color: #fff
+	.header__block
+		padding-top: 15px
+		padding-bottom: 15px
+		position: relative
+		z-index: 10000
+	.header__block-btn
+		button
+			margin-left: 15px
+			&:first-child
+				margin-left: 0
+	.h__logo
+		margin-top: 10px
+		transition: all 0.4s ease		
+		svg
+			height: 82px
+			width: auto
+		.cls-1
+			fill: #fff
+		.cls-2
+			fill: $yellow
+	.h__contacts
+		margin-top: 20px
+		margin-bottom: 20px	
+	.h__contacts-item
+		display: none
+		vertical-align: bottom
+		color: #fff	
+
+		margin-right: 40px
+		p
+			margin-bottom: 5px
+		a		
+			letter-spacing: 1.6px;
+			color: #fff
+			+hov-a($under: none, $color: $yellow)
+
+		&:last-child
+			margin-right: 0
+	.h__wrap-soc
+		padding-top: 15px
+		position: relative
+		z-index: 10000
+		min-width: 100px
+		svg
+			fill: #000
+			display: none
+
+	.h__wrap-btn-todo
+		width: 247px
+	.btn-yellow
+		display: none
+		opacity: 0
+		transition: all 0.4s ease	
+		position: relative
+		z-index: 10000
+
+	&.sticky		
+		background-color: #fff
+		box-shadow: 0 2px 12px 0px rgba(0, 0, 0, 0.1)
+		.h__contacts-item, a
+			color: #000
+		.btn-yellow
+			display: block !important
+			opacity: 1 !important
+		.h__logo
+			svg
+				height: 60px
+			.cls-1
+				fill: #000
+		.header__block
+			padding: 5px 0
+
+.header.header-inner-page
+	.btn-yellow
+		display: block
+		opacity: 1
+
+
+
+//--------------------------//
+
+.custom-title
+	color: #ffffff;
+	font-family: 'lava bold' , sans-serif 
+	font-size: 86px;
+	font-weight: bold
+	display: inline-block
+	vertical-align: middle
+	line-height: 1
+	margin-bottom: 26px
+
+	p
+		margin-bottom: 0
+		line-height: 1		
+.big-title
+	color: #fff
+	font-family: 'lava bold' , sans-serif 
+	font-size: 326px
+	font-weight: bold
+	letter-spacing: -30.97px
+	text-transform: uppercase;
+	display: inline-block	
+	vertical-align: middle
+.promo-overlay
+	background-image: linear-gradient(119deg, #000000 0%, #333333 100%);
+	opacity: 0.7; 
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%	
+.promo
+	padding: 156px 0 1px 0
+	overflow: hidden
+	video
+		position: absolute;
+		top: 50%
+		transform: translateY(-50%)
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: -1;
+		min-width: 100%;
+		min-height: 100%;
+		overflow: hidden; 
+
+.promo__title 
+	.icon-zn-home 
+		fill: #fff	
+		font-size: 9rem;
+		width: 4rem;
+		margin-left: 0
+		margin-right: 40px
+
+.promo__wrap
+	
+.promo__wrap_b
+	margin: 65px 0 15px
+	position: relative
+	z-index: 2
+	.icon-play-button
+		font-size: 20px
+		vertical-align: top
+		margin: -1px 8px 0 0	
+	a
+		color: #fff
+		transition: 0.3s
+		&:hover
+			color: $yellow	
+		&:hover .icon-play-button
+			color: $yellow	
+	.js-btn-open-video, .btn-open-video		
+		margin-bottom: 50px
+		display: inline-block		
+ 
+
+
+.promo__right-menu
+	.promo-btn-item-wrap
+		display: table-cell;
+		vertical-align: middle;	
+		span
+			display: block	
+			padding: 2px 0		
+	.promo-btn-item
+		width: 100%
+		height: 108px;
+		border: 5px solid $yellow;
+		background: rgba(74, 74, 74, 0.6);
+		margin-bottom: 15px
+		text-align: left
+		padding: 22px 0 22px 22px
+		display: table
+		transition: 0.3s
+		position: relative
+		&.active, &:hover
+			background-color: $yellow;
+			a
+				color: #000			
+	a
+		color: #fff	
+	.swiper-slide-active .promo-btn-item
+		background-color: $yellow;
+		a
+			color: #000			
+
+//------------- about  -----------
+
+.promo__title-in
+	width: 100%
+	text-align: center
+.ps-btn-title
+	display: inline-block
+	color: #000
+	background-color: $yellow
+	text-align: center
+	padding: 13px
+	font-size: 24px
+	font-family: "lava bold"
+	margin-top: 4.5%
+
+
+//------------- 404  -----------
+
+.nopage__block 
+	width: 100%
+	img
+		display: inline-block
+	.nopage__block-title
+		color: #fff
+		font-size: 24px
+
+	.nopage__block-text
+		color: #fff
+		font-size: 16px
+		margin-bottom: 25px
+	.btn
+		line-height: 54px
+
+//------------  footer  ------------
+.footer
+	background-color: #3d3d3d;
+	padding: 45px 15px 0 15px
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: auto;
+	position: relative
+	z-index: 3
+	min-height: 273px
+.f__logo
+	display: block
+	margin-bottom: 30px
+	color: #fff
+	svg
+		height: 82px
+		width: auto
+	.cls-1
+		fill: #fff
+	.cls-2
+		fill: $yellow
+
+.f__menu
+	margin-left: 70px
+	li
+		float: left
+		width: 50%
+		margin-bottom: 38px
+		text-align: left
+.f__menu-item
+	color: #ffffff
+	font-size: 14px
+	font-family: "Helvetica Neue Bold"
+	letter-spacing: 3px
+	display: inline-block
+	+hov-a($under: none, $color: $yellow)	
+.f__contacts_block
+	height: 70px
+	li
+		margin-bottom: 20px
+.f__contacts-item
+	color: #ffffff
+	font-size: 14px
+	font-family: "Helvetica Neue Bold"	
+	+hov-a($under: none, $color: $yellow)	
+.f__contacts-adress
+    opacity: 0.5;
+    color: #ffffff
+    font-family: "Helvetica Light"
+    line-height: 17px
+    left: -64%
+    width: 200px
+    bottom: 49px
+    position: absolute
+
+.figure__slogan
+	position: relative
+	text-align: right
+	img
+		display: inline-block
+
+
+
+.figure__slogan_item
+	position: absolute
+	top: 0
+	right: -10px
+.research__block-item
+	position: absolute
+	right: 15px
+	bottom: 35px
+
+.link-email
+	color: $yellow
+	font-size: 14px
+	+hov-a($under: none, $color: #fff)
+
+
+//--- Страница КОНТАКТЫ ---
+
+.maps-content
+	min-height: 900px
+.block__map
+	width: 100%
+	height: 100%
+	position: absolute
+.contacts__block-item
+	background-color: #fff
+	display: inline-block
+.contacts-item
+	position: relative
+	z-index: 3
+	background-color: #fff
+	padding: 15px 25px 15px;
+	width: 340px
+	&:first-child
+		background-color: $yellow
+	p
+		color: #3d3d3d
+		font-size: 14px
+		margin-top: 8px
+		margin-bottom: 5px
+	a
+		display: block
+
+	.contacts-item-tel		
+		color: #3d3d3d
+		font-size: 16px
+		letter-spacing: 1.6px
+
+	&.triangle:before
+		content: ''
+		width: 0
+		height: 0
+		border-top: 30px solid transparent
+		border-left: 30px solid #fff
+		border-bottom: 30px solid transparent
+		position: absolute
+		bottom: -60px
+		right: -30px
+.contacts__block 
+	width: 100%
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+.contacts__map, .container__map
+	height: 100%
+	width: 100%
+	opacity: 0 
+.contacts__map
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 1
+
+
+
+
+
+
+
+@import "templates/about"
+@import "templates/cases"
+@import "templates/services"
+@import "templates/map"
+
+
+@import "media" // Всегда в конце
+
+.serv__descr
+	text-align: center
+	img
+		display: inline-block
+	p
+		margin-top: 30px
+	.serv__descr-title
+		background: #3d4a3d;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding: 8px;
+		border: 0 !important;
+		color: #fff;
+
+	.line-b
+		position: relative
+		margin-bottom: 20px
+		&:after
+			content: '';
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 20px;
+			display: block;
+			width: 100%;
+			position: absolute;
+			bottom: 15px;	
+		&:before
+			content: '';
+			border-bottom: 1px solid #ccc;
+			display: block;
+			width: 100%;
+			position: absolute;
+			bottom: 0;	

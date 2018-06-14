@@ -1,0 +1,197 @@
+include mixin/_mixins
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    title Проект Шахова
+    meta(name='description', content='')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(property='og:image', content='path/to/image.jpg')
+    link(rel='shortcut icon', href='img/favicon/favicon.ico', type='image/x-icon')
+    link(rel='apple-touch-icon', href='img/favicon/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
+    link(href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet")
+
+    // Chrome, Firefox OS and Opera
+    meta(name='theme-color', content='#000')
+    // Windows Phone
+    meta(name='msapplication-navbutton-color', content='#000')
+    // iOS Safari
+    meta(name='apple-mobile-web-app-status-bar-style', content='#000')
+    // IE 8
+    //if lt IE 8
+      p.browserupgrade
+        | You are using an 
+        strong outdated 
+        |  browser. Please 
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+
+
+    link(rel='stylesheet', href='css/swiper.min.css')              
+    link(rel='stylesheet', href='css/main.css') 
+
+   
+  body
+    .overlay 
+    header.header.header-inner-page.fixed-top
+        .header__block
+            .container-fluid
+
+                .row.align-items-center
+                    .col-2
+                        .h__logo
+                            include logo/logo-h.jade                          
+                            
+                    .col-2.col-sm-2.col-md-2.col-lg-4
+                        .h__contacts
+                          .h__contacts-item.d-lg-inline-block
+                            p Москва
+                            a(href="tel:+74954106151").large +7 495 410 6151
+                          
+                          .h__contacts-item.d-lg-inline-block            
+                            p Многоканальный
+                            a(href="tel:+74956538173").large +7 495 653 8173
+                    .col-8.col-sm-8.col-md-8.col-lg-6
+                        .header__block-btn.d-md-flex.justify-content-between
+                            .h__wrap-soc
+                                +icon('facebook-black','js-vision-open-menu')                         
+                            .h__wrap-btn-todo
+                                button.btn.btn-yellow.js-btn-open-todo
+                                    span ПОСТАВИТЬ ЗАДАЧУ
+                            
+                            button.btn.btn-menu.js-btn-open-menu(title="Открыть меню") 
+                include modals/menu.jade 
+                    
+
+    main.content
+        section.bg-about
+
+
+            .promo-overlay   
+            .promo.posr 
+
+                         
+                .container-fluid.promo__wrap
+                    .text-center
+                        .d-inline-block
+                            ul.breadcrumb-mobile.only-mob
+                                li.breadcrumb-m-item
+                                    a(href='#') Главная
+                                li.breadcrumb-m-item.active(aria-current='page') О нас 
+
+                        .promo__title-in
+                            h1.ps-btn-title О нас
+
+                    .promo__wrap_b
+                        .breadcrumbs.only-desktop
+                            nav(aria-label='breadcrumb')
+                                ol.breadcrumb
+                                    li.breadcrumb-item
+                                        a(href='#') Главная
+                                    li.breadcrumb-item.active(aria-current='page') О нас
+        
+        section.section
+            .about__description
+                .container-fluid
+                    .row
+                        .col-sm-12.col-md-3
+                            .cart-gend
+                                figure.wrap-img
+                                    img(src="img/about/gend.png", alt="генеральный директор")
+                                    figcaption 
+                                        p.cart-gend-title Мария Шахова
+                                        p.font-italic.small.text-yellow генеральный директор
+                                        p.small.text-color-gray Журналист, блогер, PR-специалист. Не раз участвовала в информационных войнах таких компаний, как Samsung и Apple, а также политических PR акций. Специализируется на политическом и бизнес пиаре, креативных методах решения задач.
+
+
+
+                        .col-sm-6.col-md-5
+                            .ad-wrap
+                                h2.about__description-title.fz20 Идейные соображения высшего порядка
+
+                                p.text-color-gray
+                                    | На сегодняшний день в штате агентства работают более 10 человек – это профессиональная команда пиарщиков и консультантов с журналистским, философским, психологическим, экономическим образованием и опытом реализации международных проектов «под ключ».
+
+                                p.text-color-gray
+                                    | Мы обладаем пулом экспертов – лидеров мнений, которые привлекаются по необходимости, для продвижения проектов:
+                                ul.list-block
+                                    li Чиновники;
+                                    li Специалисты в определенных областях;
+                                    li Блогеры; 
+                                    li Звезды шоу-бизнеса и т.д.
+                                     
+                                       
+
+
+                        .col-sm-6.col-md-4                           
+                            blockquote.ad__blockquote
+                                .ad__blockquote-wrap
+                                    .ad__blockquote-item.bg-quote-l
+                                        h4.ad__blockquote-title.fz18 НА СЕРЬЕЗНОМ
+                                        p.small.text-color-gray У нас много реализованных PR-проектов и всегда в запасе пара свежих идей!
+
+                                    .ad__blockquote-item.bg-quote-r
+                                        h4.ad__blockquote-title.fz18 НА ЛИТЕРАТУРНОМ
+                                        p.small.text-color-gray PR-агентство Марии Шаховой - команда нескучных профессионалов своего дела!                         
+
+
+                                    .ad__blockquote-item.bg-quote-l
+                                        h4.ad__blockquote-title.fz18 ПАРОЙ СЛОВ
+                                        p.small.text-color-gray Мы любители воплощать идеи с помощью PR-инструментов и вообще креативно трудиться!                                   
+
+        section.section
+            .container-fluid.adventures__block
+                h3.ab-title Членство и награды
+                ul
+                    li.d-sm-inline-block.text-center
+                        img.d-inline-block(src="img/about/adv-1.png", alt="")
+                        p Член РАСО
+
+                    li.d-sm-inline-block.text-center
+                        img.d-inline-block(src="img/about/adv-2.png", alt="")
+                        p Событие года
+
+                    li.d-sm-inline-block.text-center
+                        img.d-inline-block(src="img/about/adv-3.png", alt="")
+                        p Cannes Lions
+
+
+                    li.d-sm-inline-block.text-center
+                        img.d-inline-block(src="img/about/adv-4.png", alt="")
+                        p Рейтинг РАР
+
+                    li.d-sm-inline-block.text-center
+                        img.d-inline-block(src="img/about/adv-5.png", alt="")
+                        p Рейтинг НР2К
+
+
+
+        include templates/our-commands-slider.jade
+
+
+
+        section.section
+            .container-fluid
+                blockquote.note__block
+                    p
+                        | Нашу работу можно описать двумя словами: делаем пиар. 
+                        | Мы работаем, чтобы вас любили! Мы принципиально не сотрудничаем с частными лицами из шоу-бизнеса, религиозными организациями, а также с людьми, чьи убеждения противоречат нашим.
+
+        include templates/portfolio.jade
+
+    include footer.jade
+    
+
+    include modals/todo.jade                           
+    include modals/video.jade 
+
+    script(src='js/jquery.min.js') 
+    script(src='js/readmore.min.js')
+    script(src='js/swiper.min.js')   
+    script(src='js/jquery.validate.min.js') 
+    script(src='js/jquery.maskedinput.js')
+    script(src='js/main.js') 
+

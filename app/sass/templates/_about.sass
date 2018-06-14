@@ -1,0 +1,321 @@
+.bg-about
+	position: relative
+	height: 465px
+	overflow: hidden;
+	margin-bottom: 45px
+	.promo__wrap_b
+		margin-bottom: 15px
+		margin-top: 115px
+.breadcrumb
+	padding-left: 0
+.breadcrumb-item
+	&::before
+		width: 4px
+		height: 4px
+		border-radius: 10px
+		background-color: #fff
+		margin: 3px 8px
+
+.breadcrumb-m-item, .breadcrumb-m-item.active
+	display: inline-block
+	margin: 0 10px
+	color: #fff
+	opacity: 0.5	
+	a
+		color: #fff
+		
+
+.about__description
+	margin-bottom: 115px
+.cart-gend
+	margin-top: 25px
+	p
+		line-height: 1.6
+	.wrap-img
+		img
+			margin-bottom: 20px
+
+	.cart-gend-title
+		font-family: 'Helvetica Neue Bold'
+		font-weight: normal
+		text-transform: uppercase
+		letter-spacing: 1px
+
+	.small
+		letter-spacing: 0.6px		
+
+
+.ad-wrap 
+	margin-top: 25px
+	p
+		margin-bottom: 18px
+		line-height: 1.8
+		letter-spacing: 1.9px
+	.about__description-title
+		margin-bottom: 25px
+		font-weight: normal
+
+
+
+.ad__blockquote
+	overflow: hidden
+
+.ad__blockquote-item
+	width: 250px
+	height: 152px
+	padding: 25px 25px 0 30px
+	p
+		max-height: 3.4em
+		overflow: hidden
+		letter-spacing: 0.6px;
+		line-height: 1.6
+	&:nth-child(even)
+		float: right
+	&:nth-child(odd)
+		float: left	
+.ad__blockquote-title
+	margin-bottom: 10px
+.bg-quote-l
+	background: url(../img/about/quote-l.png) no-repeat center
+.bg-quote-r
+	background: url(../img/about/quote-r.png) no-repeat center
+
+
+.list-block
+	li
+		margin-bottom: 5px
+		font-style: italic
+		font-family: 'Helvetica Light'
+		color: #7e7e7e
+		&:before
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			width: 13px
+			height: 1px
+			margin-right: 15px
+			background-color: $yellow
+
+
+
+.adventures__block
+	text-align: center 
+	margin-bottom: 80px
+	ul
+		margin-top: 0
+	li
+		width: 30%
+		height: 91px
+		position: relative
+		border: 1px solid #f3f3f3
+		margin-top: 73px
+
+	img
+		position: absolute
+		top: -38px
+		left: 50%
+		margin-left: -27px
+	p
+		margin-top: 42px
+		font-family: 'Helvetica Neue Bold'
+		font-size: 14px
+.ab-title
+	font-size: 32px
+	text-align: center
+	margin-bottom: 13px
+
+
+.our__commands_block-wrap
+	margin-top: 50px	
+.our-commands 
+	.news__block-item
+		height: 435px	
+	.nbi-head
+		max-height: 249px
+	.nbi-line
+		height: 5px
+
+	.oc-name
+		margin: -2px auto 0
+	.text-yellow
+		text-transform: lowercase
+		font-family: 'Helvetica Neue Bold'
+		margin-bottom: 16px
+		letter-spacing: 1.3px		
+	p
+		line-height: 1.6
+		letter-spacing: 0.3px
+
+	.swiper-container-horizontal
+		padding-bottom: 50px
+.swiper-pagination-bullet
+	width: 14px
+	height: 14px
+	margin-left: 8px !important
+	margin-right: 8px !important
+.swiper-pagination-bullet-active
+	background-color: #3d3d3d
+
+.note__block
+	border: 6px solid $yellow
+	color: #000000;
+	font-family: "Helvetica Neue";
+	font-size: 18px;
+	font-weight: normal
+	letter-spacing: 0.6px;
+	line-height: 27px;
+	margin-bottom: 55px
+	p
+		max-width: 890px
+		margin: 38px auto 50px
+		text-align: center
+		padding-left: 15px
+		padding-right: 15px
+
+
+.form__job
+	background-color: #f7f7f7;
+	height: 435px
+	width: 100%
+	display: table
+	.form__job-wrap
+		display: table-cell
+		vertical-align: middle
+		padding: 44px
+		input
+			background-color: transparent
+			+place(#B7B7B7 , 12px)
+		.small
+			margin-bottom: 25px
+	.form-group
+		position: relative
+	.form-title
+		font-size: 24px
+		line-height: 1.3
+		text-align: center
+		margin-bottom: 14px
+	.uploaded_file
+		visibility: hidden
+		position: absolute
+		height: 0
+	i.error
+		left: 0
+	.icon-upload 
+		transition: 0.3s
+		cursor: pointer	
+		position: relative
+		margin-left: 30px			
+		svg
+			fill: $yellow
+		&:hover
+			svg
+				transition: 0.3s				
+				fill: #000	
+				animation-name: spin;
+				animation-duration: 600ms;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			.psevd-upload						
+				color: #000
+	.psevd-upload
+		color: #ffbf00
+		font-size: 10px
+		letter-spacing: 1px
+		font-family: 'Helvetica Neue Bold'
+		padding: 21px 0
+		margin-bottom: 0
+		cursor: pointer
+		transition: 0.3s
+		&:hover
+			color: #000
+	.job-textarea
+		min-height: 86px
+		+place(#B7B7B7 , 12px)
+	&.smallform
+		.form__job-wrap
+			padding: 8px 30px
+		.icon-skrep 
+			position: absolute
+			top: 20px
+			left: -30px
+		.form__job .psevd-upload
+			padding: 10px 0 0
+		.btn-yellow
+			font-size: 10px
+
+@keyframes spin
+	from
+		transform: rotate(0deg)
+
+	to
+		transform: rotate(360deg)
+
+
+@media only screen and (max-width : 1025px)
+	.ad__blockquote-item
+		margin-bottom: 15px
+	.b__form-job
+		display: none
+	.js-container-form-job
+		.form__job_face
+			display: none
+		.js-form-validate-job
+			display: block
+
+	.form__job .icon-upload	
+		margin-left: 30px;
+
+@media only screen and (max-width : 801px)
+	.ps-btn-title
+		margin-top: 13px
+
+
+
+@media only screen and (max-width : 582px)
+	.bg-about
+		height: 300px	
+	.ad__blockquote
+		margin-top: 40px
+	.about__description
+		margin-bottom: 0
+	.adventures__block
+		margin-bottom: 40px
+	.promo__wrap
+		min-height: 180px
+
+
+@media only screen and (max-width : 576px)
+	.cart-gend, .ad-wrap
+		margin-bottom: 25px
+	.wrap-img 
+		img
+			width: 100%
+
+	.bg-about
+		margin-bottom: 15px
+	.cart-gend		
+		figcaption
+			p:last-child
+				margin-bottom: 0
+
+	.adventures__block
+		li
+			width: 95%
+			margin: 75px auto 0
+
+	.js-container-form-job
+		margin-left: -30px
+		margin-right: -30px
+	.icon-upload
+		display: inline-block
+	.form__job .form__job-wrap input
+		&:first-child
+			margin-bottom: 20px
+	.form__job.smallform .form__job-wrap	
+		padding-top: 30px
+		padding-bottom: 30px		
+
+	.our-commands .swiper-container-horizontal
+		padding-bottom: 15px
+		margin-bottom: 50px
+				

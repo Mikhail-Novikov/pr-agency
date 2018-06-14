@@ -1,0 +1,28 @@
+header.header.header-inner-page.fixed-top
+    .header__block
+        .container-fluid
+
+            .row.align-items-center
+                .col-2
+                    .h__logo
+                        include jade/logo/logo-h.jade                     
+                        
+                .col-2.col-sm-2.col-md-2.col-lg-4
+                    .h__contacts
+                      .h__contacts-item.d-lg-inline-block
+                        p Москва
+                        a(href="tel:+74954106151").large +7 495 410 6151
+                      
+                      .h__contacts-item.d-lg-inline-block            
+                        p Многоканальный
+                        a(href="tel:+74956538173").large +7 495 653 8173
+                .col-8.col-sm-8.col-md-8.col-lg-6
+                    .header__block-btn.d-md-flex.justify-content-between
+                        .h__wrap-soc
+                            +icon('facebook-black','js-vision-open-menu')                         
+                        .h__wrap-btn-todo
+                            button.btn.btn-yellow.js-btn-open-todo
+                                span ПОСТАВИТЬ ЗАДАЧУ
+                        
+                        button.btn.btn-menu.js-btn-open-menu(title="Открыть меню") 
+            include jade/templates/header.jade

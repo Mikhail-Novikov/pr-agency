@@ -1,0 +1,141 @@
+
+.op-btn	
+	background-color: transparent
+	color: #5f94b4
+	font-family: 'ptsans bold', sans-serif;
+	font-size: 14px;
+	padding: 6px 12px
+	border-radius: 4px;
+	border: 1px solid #5f94b4;
+	opacity: 1
+	transition: 0.3s
+	text-transform: initial
+	&:hover
+		color: #fff
+		background-color: #7fa9c3
+		border-color: #7fa9c3
+	&:active
+		color: #fff
+		background-color: #5f94b4	
+
+
+.btn-yellow 	
+	background-color: $yellow
+	color: #000
+	font-size: 12px
+	font-family: "Helvetica Neue Bold"
+	letter-spacing: 1px
+	padding: 6px 12px
+	border-radius: 0
+	border: 1px solid $yellow
+	opacity: 1
+	transition: 0.3s
+	height: 66px
+	width: 247px
+	
+	&:hover
+		color: #000
+		background-color: #fff
+		border-color: #7fa9c3
+	&:active
+		color: #000
+		background-color: #fff	
+.btn-small
+	width: 184px
+	height: 47px
+.btn-full
+	width: 100%
+	height: 47px		
+.btn-menu 
+	outline: none
+	background: url('../svg/sprite/gamb.svg') no-repeat center #fff
+	height: 66px
+	width: 66px
+	border-radius: 0
+	position: relative
+	z-index: 10000
+	&:hover
+		color: #000
+		background-color: $yellow
+		border-color: $yellow
+	&:active
+		color: #000
+		background-color: $yellow	
+
+	&.open
+		background: url('../svg/sprite/close-black.svg') no-repeat center #fff	
+		background-size: 22px	
+// Кнопки collapse - readmore
+.collapse-list-info
+	text-align: center
+	font-size: 13px
+	font-family: "Helvetica Neue Bold"
+	position: relative
+	z-index: 99
+	margin-top: 20px
+	letter-spacing: 1px
+	overflow: hidden
+	span
+		cursor: pointer
+		position: relative
+		display: inline-block
+		&:after , &:before
+			content: "";
+			position: absolute;
+			height: 2px;
+			border-top: 1px solid #000
+			top: 50%;
+			width: 2000px;	
+		&:before
+			right: 100%;
+			margin-right: 20px;
+		&:after
+			left: 100%;
+			margin-left: 20px;
+	.icon-arrow-list
+		margin: 10px auto 0
+		text-align: center
+		transition: rotate 0.3s
+	&.collapse-close
+		.icon-arrow-list
+			transform: rotate(180deg);		
+
+// Стрелки и точки слайдеров
+=arrow-prev-h20-white($deg)
+	display: block
+	width: 13px
+	height: 13px
+	border: 3px solid #fff
+	border-width: 0 0 3px 3px
+	transform: rotate($deg) 
+	&:hover
+		border-color: #5f94b4
+		transition: 0.3s
+
+=arrow-prev-h20-gray($deg)
+	display: block
+	width: 15px
+	height: 15px
+	border: 2px solid #abb2b7
+	border-width: 0 0 2px 2px
+	transform: rotate($deg)
+	&:hover
+		border-color: #5f94b4
+		transition: 0.3s
+
+=full-screen()
+	background: url(../img/full-screen.png) no-repeat top
+	width: 24px
+	height: 24px
+	display: inline-block
+
+=arrow-right($deg, $color , $height , $width)
+	content: ''
+	display: inline-block
+	width: $height
+	height: $height
+	border: 2px solid $color
+	border-width: 0 0 $width $width
+	transform: rotate($deg)
+
+

@@ -1,0 +1,29 @@
+.modal__todo.js-show-modal-todo
+	.modal__todo-wrap
+		.modal__todo-close.js-btn-close-modal
+			+icon('close-white','js-vision-open-todo')
+
+		h2.mtodo-title.text-center Поставить задачу
+
+
+
+		form.js-form-validate(action="")
+			.form-group
+				.row
+					.col-sm-6
+						label.small(for='nic') Ваше имя
+						input#nic.form-control(type='text' name="nic")
+						small#emailHelp.form-text.text-muted 
+
+					.col-sm-6
+						label.small(for='tel') Номер телефона
+						input#tel.form-control.js-mask(type='tel' name="phone" placeholder="+7 (___) ___-__-__")
+						small#emailHelp.form-text.text-muted 		
+
+
+			.form-group.posr
+				.row
+					.col
+						label.small(for='todo') Ваша задача
+						textarea#todo.todo-textarea.form-control(name="textarea")
+			button.btn.btn-yellow.js-form-send(type='submit') ПОСТАВИТЬ ЗАДАЧУ

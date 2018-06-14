@@ -1,0 +1,158 @@
+include mixin/_mixins
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    title Проект Шахова
+    meta(name='description', content='')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(property='og:image', content='path/to/image.jpg')
+    link(rel='shortcut icon', href='img/favicon/favicon.ico', type='image/x-icon')
+    link(rel='apple-touch-icon', href='img/favicon/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
+    link(href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet")
+
+    // Chrome, Firefox OS and Opera
+    meta(name='theme-color', content='#000')
+    // Windows Phone
+    meta(name='msapplication-navbutton-color', content='#000')
+    // iOS Safari
+    meta(name='apple-mobile-web-app-status-bar-style', content='#000')
+    // IE 8
+    //if lt IE 8
+      p.browserupgrade
+        | You are using an 
+        strong outdated 
+        |  browser. Please 
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+
+
+    link(rel='stylesheet', href='css/swiper.min.css')              
+    link(rel='stylesheet', href='css/main.css') 
+
+   
+  body
+    .overlay 
+    .wrapper
+        header.header.header-inner-page.fixed-top
+            .header__block
+                .container-fluid
+
+                    .row.align-items-center
+                        .col-2
+                            .h__logo
+                                include logo/logo-h.jade                          
+                                
+                        .col-4
+                            .h__contacts
+                              .h__contacts-item.d-lg-inline-block
+                                p Москва
+                                a(href="tel:+74954106151").large +7 495 410 6151
+                              
+                              .h__contacts-item.d-lg-inline-block            
+                                p Многоканальный
+                                a(href="tel:+74956538173").large +7 495 653 8173
+                        .col-6
+                            .header__block-btn.d-md-flex.justify-content-between
+                                .h__wrap-soc
+                                    +icon('facebook-black','js-vision-open-menu')                         
+                                .h__wrap-btn-todo
+                                    button.btn.btn-yellow.js-btn-open-todo
+                                        span ПОСТАВИТЬ ЗАДАЧУ
+                                
+                                button.btn.btn-menu.js-btn-open-menu(title="Открыть меню") 
+                    include modals/menu.jade 
+                        
+
+        main.content.bg-black-gray.justify-content-center.align-items-center
+            section.nopage__block 
+                .container-fluid
+                    .row.align-items-center
+                        .col-xs-12.col-sm-6
+                            img.nopage__block-pic-m(src="img/nopage-m.png", alt="404")
+                            img.nopage__block-pic-d(src="img/nopage-d.png", alt="404")
+
+                        .col-xs-12.col-sm-6
+
+                            h3.nopage__block-title На этой странице ничего нет
+
+                            p.nopage__block-text.fz16 Но можете найти что-то, начав с главной
+
+                            a(href="/").btn.btn-yellow.js-btn-open-todo
+                                span ГЛАВНАЯ СТРАНИЦА
+
+                                   
+    footer.footer
+            .container-fluid
+                .row.justify-content-between
+                    .col-sm-6.col-md-5.col-lg-2
+                        ul.block
+                            li
+                                a.f__logo(href="#")
+                                    include logo/logo-h.jade
+                            li
+                                a(href="#")
+                                    img(src="img/footer/facebook-text.png", alt="")
+
+                    .f__contacts.col-sm-6.col-md-5.order-lg-2.col-lg-2
+                        ul.f__contacts_block.block
+                            li
+                                a.f__contacts-item(href="#") +7 495 410 6151
+
+                            li
+                                a.f__contacts-item(href="#") +7 495 653 8173
+
+                        a.f__contacts-item.link-email(href="#") info@mashakhova.ru
+
+                                  
+
+                    nav.col-sm-6.col-md-5.text-center.order-lg-1.col-lg-5
+                    
+                        ul.f__menu
+                            li
+                                a.f__menu-item(href="#") ГЛАВНАЯ
+
+                            li
+                                a.f__menu-item(href="#") УСЛУГИ
+                            li
+                                a.f__menu-item(href="#") О НАС
+                            li
+                                a.f__menu-item(href="#") КЛИЕНТЫ
+                            li
+                                a.f__menu-item(href="#") НОВОСТИ
+                            li
+                                a.f__menu-item(href="#") КОНТАКТЫ
+
+                    .col-sm-6.col-md-5.order-lg-3.col-lg-3
+                        .research__block
+
+                            p.small.f__contacts-adress
+                                |123022, Москва, 
+                                |БЦ "Трехгорная Мануфактура",
+                                |ул. Рочдельская, дом 15, 
+                                |стр 25-25А                              
+                            .figure__slogan
+                                img(src="img/anime/dude.png", alt="")
+
+
+                            a(href="http://empiredigital.ru/" target="_blank").research__block-item
+                                img(src="img/footer/research-logo.png", alt="")
+
+
+
+    
+
+    include modals/todo.jade
+
+    script(src='js/jquery.min.js') 
+    script(src='js/readmore.min.js')
+    script(src='js/swiper.min.js')   
+    script(src='js/jquery.validate.min.js') 
+    script(src='js/jquery.maskedinput.js')    
+    script(src='js/jquery.swipebox.min.js')
+
+    script(src='js/main.js') 
+

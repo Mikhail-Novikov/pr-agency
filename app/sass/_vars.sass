@@ -1,0 +1,85 @@
+@import "bourbon"
+
+$default-font: "ptsans", sans-serif
+$delay-btn: 0.3s
+
+=border-box-light()
+    background-repeat: no-repeat
+    background-color: rgba(255, 255, 255, 0.29)
+    z-index: 1000
+    box-shadow: 0px 0px 13px rgba(255, 255, 255, 0.73) inset
+    background-size: cover
+
+=text-small-black()
+	color: #3f505a
+	font-family: $default-font
+	font-size: 12px;
+	font-weight: 400
+	line-height: 15px   
+
+
+.p-r-0
+	padding-right: 0
+.small-text	
+	+text-small-black()
+.posr
+	position: relative
+ul
+	padding: 0
+ul li
+	list-style: none
+a
+	text-decoration: none
+	transition: $delay-btn
+	color: #000
+	&:hover, &:focus
+		text-decoration: none
+		transition: $delay-btn
+		color: $yellow
+img
+	max-width: 100%
+	display: block
+	height: auto
+input
+	outline: none
+	font-size: 18px
+.fz12
+	font-size: 12px
+.fz16
+	font-size: 16px
+.fz18
+	font-size: 18px
+.fz20
+	font-size: 20px
+.fz24
+	font-size: 24px	
+	
+.text-yellow
+	color: $yellow
+.text-color-gray
+	color: #7e7e7e
+
+.block
+	text-align: justify
+	&:after
+		content: ""
+		display: inline-block
+		width: 100%	
+.absolut-center
+	transform: translateX(-50%)
+	position: absolute
+	left: 50%
+
+.wrapper
+	display: flex
+	flex-direction: column
+	height: 100%
+.content
+	flex: 1 0 auto
+.mb30
+	margin-bottom: 30px
+
+.mb45
+	margin-bottom: 45px
+footer
+	flex: 0 0 auto

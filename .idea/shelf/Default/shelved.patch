@@ -1,0 +1,10 @@
+Index: libs/arcticModal/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- libs/arcticModal/.gitignore	(date 1518593060000)
++++ libs/arcticModal/.gitignore	(date 1518593060000)
+@@ -0,0 +1,1 @@
++/.idea
+\ No newline at end of file

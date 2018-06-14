@@ -1,0 +1,112 @@
+.news__block
+.news__block-wrap
+	margin-top: 50px
+
+.news__block-item
+	height: 490px;
+	margin-bottom: 25px
+	background-color: #f7f7f7;
+	text-align: center
+	transition: 0.3s
+	position: relative
+	.nbi-head
+		max-height: 199px
+		overflow: hidden
+		img
+			width: 100%
+	.nbi-main
+		display: block
+		padding: 25px 20px
+		color: #7e7e7e;
+		.date
+			color: $yellow
+			font-family: "Helvetica Neue Bold"
+		h3
+			max-height: 2.6em
+			overflow: hidden
+			font-size: 18px			
+		p
+			line-height: 1.6
+			max-height: 6.6em
+			overflow: hidden
+
+
+
+	.nbi-bottom
+		text-align: center
+		a
+			display: inline-block
+			margin: 0 16px
+		svg
+			fill: #999999;
+			font-size: 16px
+	.nbi-line
+		height: 43px
+		transition: border-width 0.3s
+		border-bottom: 4px solid $yellow
+		position: absolute;
+		bottom: 0;
+		left: 0
+		right: 0
+		width: 100%;
+
+	&:hover .nbi-line
+		border-width: 0 0 8px 0 !important
+
+
+//страница NEWSPAGE
+
+//promo
+.bg-newspage
+
+	.ps-btn-title
+		max-width: 440px
+.pn-date
+	background-color: #fff
+	display: inline-block
+	padding: 8px
+.promo__news-title-in
+	max-width: 450px
+	.ps-btn-title
+		margin-bottom: 0
+
+
+// news-slider
+.swiper-news-button-next, .swiper-news-button-prev
+	position: absolute;
+	top: 50%;
+	padding: 8px 6px
+	margin-top: -22px;
+	z-index: 10;
+	cursor: pointer;
+	background-size: 27px 44px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: $yellow
+	svg
+		fill: #3d3d3d
+		stroke: #3d3d3d
+		font-size: 19px
+
+.swiper-news-button-next
+	right: 10px;
+	left: auto;
+
+.swiper-news-button-prev
+	left: 10px;
+	right: auto;
+.ns-overlay
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	width: 100%
+	height: 100%
+	background: url(../img/news/lupa-black.png) no-repeat center rgba(255, 191, 0, 0.8)
+	opacity: 0
+	transition: opacity 0.3s ease
+	cursor: pointer
+.swiper-slide:hover
+	.ns-overlay
+		opacity: 1

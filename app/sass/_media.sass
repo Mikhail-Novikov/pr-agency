@@ -1,0 +1,283 @@
+@import "bourbon"
+
+
+/*==========  Desktop First  ==========*/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1366px)
+	.news__block-item .nbi-main h3
+		max-height: 4em
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1281px)
+	.h__contacts-item
+		margin-left: 20px
+		margin-bottom: 8px
+	.footer
+		.figure__slogan	> img
+			width: 75px
+	.f__contacts-adress
+		bottom: 0
+	.big-video
+		height: auto
+		min-height: initial
+
+@media only screen and (max-width : 1025px)
+	.footer
+		.figure__slogan	> img, .figure__slogan_item
+			display: none
+
+
+	.modal__menu_b-left
+		width: auto
+	.promo__right-menu li
+		width: 250px
+
+	.news__block-item .nbi-head img
+		width: auto
+		margin: 0 auto
+
+	.f__contacts-adress	
+		position: static
+
+	.f__menu
+		margin-left: 0
+		li:nth-child(even)
+			text-align: right
+	.f__contacts_block li
+		display: inline-block
+	.f__contacts-adress	
+		text-align: center
+		left: 0
+		width: 100%
+	.footer
+		padding: 30px 0
+		.link-email
+			margin-bottom: 30px
+			display: block 
+			text-align: center
+		.block
+			li
+				display: inline-block
+				vertical-align: top
+	.research__block
+		text-align: center
+	.research__block-item
+		position: static
+		display: inline-block
+		margin: 40px 0 15px
+
+
+@media only screen and (max-width : 900px)
+	.wrapper
+		height: auto
+	.contacts__block
+		position: static
+		width: 100%
+		transform: translateY(0)
+		.container-fluid
+			padding: 0
+			width: 100%
+		.contacts-item
+			width: 100%
+			text-align: center
+
+	.block__map
+		height: 375px
+		position: static
+	.contacts__block-item
+		width: 100%
+	/* --- */
+/* Small Devices, Tablets */
+@media only screen and (max-width : 801px)
+	.only-desktop
+		display: none
+	.h__wrap-soc, .h__wrap-btn-todo
+		display: none
+	.header__block-btn
+		text-align: right
+	.header 
+		.h__logo
+			margin-top: 0
+			position: relative;
+			z-index: 10000;	
+		.align-items-center	
+			align-items: normal !important
+
+	.modal__menu 
+		left: 0 !important
+	.open-menu
+		.header .h__logo svg .cls-1
+			fill: #000				
+	.btn-menu
+		width: 55px
+		height: 55px
+	.promo
+		.swiper-container
+			padding: 0
+			margin:  0 15px
+			margin-bottom: 0
+		.promo__wrap_b .js-btn-open-video
+			display: none
+		.swiper-container-horizontal>.swiper-scrollbar
+			background-color: #fff
+		.swiper-scrollbar-drag
+			background-color: $yellow
+	.promo__right-menu .promo-btn-item
+		margin-bottom: 45px
+		height: 66px
+		padding: 5px
+		text-align: center
+	.fz-md-24
+		font-size: 24px	!important	
+
+
+@media only screen and (max-width : 582px)
+	.promo
+		padding-top: 140px
+	.promo__title
+		display: none
+	.promo__wrap
+		padding-bottom: 30px	
+	.promo__wrap_b
+		display: none
+	.promo-title-img
+		width: 100%
+		text-align: center
+		margin-bottom: 90px
+		img
+			display: inline-block
+	.promo-btn-item span:nth-child(2) , .nopage__block .nopage__block-pic-d
+		display: none
+	.nopage__block
+		text-align: center
+		padding-top: 110px
+		img
+			margin-bottom: 40px 
+	.blur
+		display: none		
+	.modal__menu
+		min-width: initial
+	.modal__menu_b-left
+		background-color: transparent
+	.modal__menu_b-right
+		width: 80%
+		margin: 0 auto		
+	.modal__menu-sub
+		display: none
+	.modal__menu-wrap
+		margin-top: 0
+	.modal__menu-botoom
+		padding: 15px	
+		text-align: center
+	.modal__todo-wrap
+		padding: 15px
+	.modal__todo
+		min-height: initial
+		.mtodo-title
+			font-size: 28px
+			margin: 26px auto 10px;	
+	.modal__menu-botoom-contacts
+		border: none
+		.link-email
+			display: block
+			padding: 20px 0
+			margin-bottom: 20px
+			border-top: 1px solid rgba(112, 112, 112, 0.21);
+			border-bottom: 1px solid rgba(112, 112, 112, 0.21);
+	.modal__todo .todo-textarea
+		height: 100px		
+	.modal__menu_b-r-h li:nth-child(even)
+		text-align: right
+
+	.modal__todo-close
+		position: absolute
+		right: 0
+		top: 5px
+		&:hover svg
+			stroke: $yellow
+		svg
+			stroke: #000;
+			font-size: 18px
+	
+
+
+	.research__block	
+		text-align: center
+		position: relative
+	
+	.container-fluid
+		width: auto	
+	.f__menu
+		margin-left: 0
+		li:nth-child(even)
+			text-align: right
+	.f__contacts_block li
+		display: inline-block
+	.f__contacts-adress	
+		text-align: center
+		left: 0
+		width: 100%
+	.footer
+		padding: 30px 0
+		.link-email
+			margin-bottom: 30px
+			display: block 
+			text-align: center
+		.block
+			li
+				display: inline-block
+				vertical-align: top
+		.figure__slogan_item
+			display: none
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/* --- */
+
+		
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 582px)
+	.promo-title-img
+		display: none
+	.nopage__block
+		.nopage__block-pic-m
+			display: none
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 801px)
+	.promo
+		.swiper-wrapper
+			display: block
+	.only-mob
+		display: none
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1025px)
+	body
+		.wrapper 
+			display: flex;
+			flex-direction: column;
+			height: 75%
+			height: calc(100% - 273px)
+		.content
+			flex-grow: 1;
+			flex-shrink: 0;
+			flex-basis: auto;
+		footer
+			flex: 0 0 auto
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/*--*/ 
