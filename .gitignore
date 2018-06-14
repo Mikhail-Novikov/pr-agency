@@ -1,6 +1,14 @@
 /node_modules/
-/app/css/
+/app/sass
 /dist/*
+/jade/*
+/libs/
+/public/
 /**/*.psd
 /**/Thumbs.db
 package-lock.json
+gulpfile.js
+.htaccess
+.bowerrc
+bower.json
+
