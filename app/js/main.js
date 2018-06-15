@@ -18,6 +18,7 @@ jQuery(document).ready(function($) {
     var offset = $('.h__wrap-soc').offset(),
         domPosMenu = offset.left,
         domLeftPosMenu = $('.modal__menu'),
+        countVideoBlocks = $('.js-video-block').find('.video-grid-item').length,
         domBigVideo = $('.js-video-block').find('.big-video'),
         domFormJob = $('.form__job'), 
         domVideoContentInner = $('.video-grid-item').eq(1).outerHeight() + $('.video-grid-item').eq(3).outerHeight() + 30;
@@ -39,12 +40,14 @@ jQuery(document).ready(function($) {
             domLeftPosMenu.css('left', 'auto');    
         }  
 
+      
+
         //Сворачивание контента ВИДЕО
         $('.js-video-block').readmore({
             speed: 300,
                   collapsedHeight: domVideoContentInner,
-                  moreLink: '<a class="collapse-list-info collapse-open "><span>ПОКАЗАТЬ ЕЩЁ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>',
-                  lessLink: '<a class="collapse-list-info collapse-close icon-arrow-list"><span>СВЕРНУТЬ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>'
+                  moreLink: countVideoBlocks <= 5 ? '' : '<a class="collapse-list-info collapse-open "><span>ПОКАЗАТЬ ЕЩЁ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>',
+                  lessLink: countVideoBlocks <= 5 ? '' : '<a class="collapse-list-info collapse-close icon-arrow-list"><span>СВЕРНУТЬ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>'
           });
 
 
@@ -66,28 +69,29 @@ jQuery(document).ready(function($) {
           } 
 
             //Сворачивание контента Клиенты
-
           heightClientsBlock = windowSizeMobile ? 628 : 350;
-          $('.js-cases-description-block').readmore({
-            speed: 300,
-                  collapsedHeight: heightClientsBlock ,
-                  moreLink: '<a class="collapse-list-info collapse-open "><span>ПОКАЗАТЬ ЕЩЁ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>',
-                  lessLink: '<a class="collapse-list-info collapse-close icon-arrow-list"><span>СВЕРНУТЬ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>'
+          $('.js-cases-description-block').each(function(index, el) {
+            var countCasesDescrBlock = $(this).find('.cd__block-item').length;
+            $(this).readmore({
+              speed: 300,
+                    collapsedHeight: heightClientsBlock ,
+                    moreLink: countCasesDescrBlock <= 8 ? '' : '<a class="collapse-list-info collapse-open "><span>ПОКАЗАТЬ ЕЩЁ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>',
+                    lessLink: countCasesDescrBlock <= 8 ? '' : '<a class="collapse-list-info collapse-close icon-arrow-list"><span>СВЕРНУТЬ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>'
+            });      
           });
-
     } 
-
-
+    
     function formJobSmall(){
       $('.form__job').addClass('smallform');  
     }
 
   //Сворачивание контента НОВОСТИ
+      var countNewsBlockPage = $('.js-news-block').find('.news__block-item').length;
       $('.js-news-block').readmore({
-          speed: 300,
-                collapsedHeight: 510,
-                moreLink: '<a class="collapse-list-info collapse-open "><span>ПОКАЗАТЬ ЕЩЁ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>',
-                lessLink: '<a class="collapse-list-info collapse-close icon-arrow-list"><span>СВЕРНУТЬ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>'
+            speed: 300,
+            collapsedHeight: 510,
+            moreLink: countNewsBlockPage <= 3 ? '' : '<a class="collapse-list-info collapse-open "><span>ПОКАЗАТЬ ЕЩЁ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>',
+            lessLink: countNewsBlockPage <= 3 ? '' : '<a class="collapse-list-info collapse-close icon-arrow-list"><span>СВЕРНУТЬ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>'
         });
   //Страница НОВОСТИ - высота сворачивания контента
 
@@ -123,8 +127,8 @@ jQuery(document).ready(function($) {
       $('.news__description').find('.js-news-block').readmore({
           speed: 300,
           collapsedHeight: heightNewsBlock ,
-          moreLink: '<a class="collapse-list-info collapse-open "><span>ПОКАЗАТЬ ЕЩЁ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>',
-          lessLink: '<a class="collapse-list-info collapse-close icon-arrow-list"><span>СВЕРНУТЬ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>'
+          moreLink: countNewsBlock <= 3 ? '' : '<a class="collapse-list-info collapse-open "><span>ПОКАЗАТЬ ЕЩЁ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>',
+          lessLink: countNewsBlock <= 3 ? '' : '<a class="collapse-list-info collapse-close icon-arrow-list"><span>СВЕРНУТЬ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>'
       });
 
   //Страница VIDEO - высота сворачивания контента
@@ -158,8 +162,8 @@ jQuery(document).ready(function($) {
       $('.video__description').find('.js-video-description-block').readmore({
           speed: 300,
           collapsedHeight: heightVideoBigBlock ,
-          moreLink: '<a class="collapse-list-info collapse-open "><span>ПОКАЗАТЬ ЕЩЁ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>',
-          lessLink: '<a class="collapse-list-info collapse-close icon-arrow-list"><span>СВЕРНУТЬ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>'
+          moreLink: countVideoBigBlock <= 2 ? '' : '<a class="collapse-list-info collapse-open "><span>ПОКАЗАТЬ ЕЩЁ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>',
+          lessLink: countVideoBigBlock <= 2 ? '' : '<a class="collapse-list-info collapse-close icon-arrow-list"><span>СВЕРНУТЬ</span><p class="icon-arrow-list"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="10" viewBox="0 0 17 10"><defs><path id="i7gua" d="M632.99 1990.15l7.25 7.26 7.26-7.26"/></defs><g><g transform="translate(-632 -1989)"><use fill="#fff" fill-opacity="0" stroke="#000" stroke-miterlimit="50" stroke-width="2" xlink:href="#i7gua"/></g></g></svg></p></a>'
       });
 
     // Промотка кнопок на главной странице в блоке PROMO
