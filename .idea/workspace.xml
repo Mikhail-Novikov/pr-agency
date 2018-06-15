@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9df5b3b4-3412-4bdb-b2d6-11be534bc3a8" name="Default" comment="настройки">
+    <list default="true" id="9df5b3b4-3412-4bdb-b2d6-11be534bc3a8" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/casepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/casepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/cases.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/cases.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/newspage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/newspage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sass/_button.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/_button.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/services_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/svg/sprite/logo-f.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/svg/sprite/logo-f.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/svg/sprite/logo-h.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/svg/sprite/logo-h.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/videopage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/videopage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jade/index.jade" beforeDir="false" afterPath="$PROJECT_DIR$/jade/index.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jade/logo/logo-h.jade" beforeDir="false" afterPath="$PROJECT_DIR$/jade/logo/logo-h.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jade/modals/todo.jade" beforeDir="false" afterPath="$PROJECT_DIR$/jade/modals/todo.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
     </list>
     <ignored path="D:\__________PROJECTS__________\Проект -Шахова\Verstka-Shachova\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,16 +37,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -70,6 +94,11 @@
               <item name="Verstka-Shachova" type="b2602c69:ProjectViewProjectNode" />
               <item name="Verstka-Shachova" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Verstka-Shachova" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Verstka-Shachova" type="462c0819:PsiDirectoryNode" />
+              <item name="jade" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -105,7 +134,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528989356168</updated>
-      <workItem from="1528989358892" duration="7187000" />
+      <workItem from="1528989358892" duration="9156000" />
+      <workItem from="1529050078996" duration="3887000" />
     </task>
     <task id="LOCAL-00001" summary="Создание проекта">
       <created>1528994730469</created>
@@ -128,11 +158,46 @@
       <option name="project" value="LOCAL" />
       <updated>1528996391826</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Проект">
+      <created>1529001391726</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1529001391726</updated>
+    </task>
+    <task id="LOCAL-00005" summary="дополнение">
+      <created>1529002463856</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1529002463856</updated>
+    </task>
+    <task id="LOCAL-00006" summary="путь к маркеру прописан в js можно брать его из параметра дива-карты">
+      <created>1529050521708</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1529050521709</updated>
+    </task>
+    <task id="LOCAL-00007" summary=" эффект наведения на странице эбаут убираем">
+      <created>1529052228253</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1529052228253</updated>
+    </task>
+    <task id="LOCAL-00008" summary=" скрывать эту кнопку если новых элементов - нет">
+      <created>1529059241898</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1529059241898</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7187000" />
+    <option name="totallyTimeSpent" value="13043000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -144,30 +209,51 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972136" />
-      <window_info anchor="bottom" id="Messages" weight="0.32972136" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" visible="true" weight="0.32972136" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32972136" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32972136" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32972136" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32972136" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32972136" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32972136" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.32972136" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32972136" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -214,9 +300,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Создание проекта" />
     <MESSAGE value="настройки" />
-    <option name="LAST_COMMIT_MESSAGE" value="настройки" />
+    <MESSAGE value="Проект" />
+    <MESSAGE value="дополнение" />
+    <MESSAGE value="путь к маркеру прописан в js можно брать его из параметра дива-карты" />
+    <MESSAGE value=" эффект наведения на странице эбаут убираем" />
+    <MESSAGE value=" скрывать эту кнопку если новых элементов - нет" />
+    <MESSAGE value="мелкие правки... по валидатору... убраны дубли id  в svg иконках" />
+    <option name="LAST_COMMIT_MESSAGE" value="мелкие правки... по валидатору... убраны дубли id  в svg иконках" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jade/404.jade">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1314,17 +1413,33 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.7340848094471283" x="1237.671248903188" y="8540.585405089207" />
+          <settings layout="Hierarchic Group" zoom="0.7340848094471283" x="1238.0" y="8541.0" />
           <SelectedNodes />
           <Categories>
             <Category>All</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
           <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4590" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/_footer.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

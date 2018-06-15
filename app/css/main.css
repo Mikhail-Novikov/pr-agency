@@ -8663,7 +8663,9 @@ footer {
   z-index: 99;
   margin-top: 20px;
   letter-spacing: 1px;
-  overflow: hidden; }
+  overflow: hidden;
+  display: block;
+  width: auto !important; }
   .collapse-list-info span {
     cursor: pointer;
     position: relative;
@@ -9787,6 +9789,8 @@ section {
   .custom-title p {
     margin-bottom: 0;
     line-height: 1; }
+  .custom-title span {
+    display: block; }
 
 .big-title {
   color: #fff;

@@ -2,3 +2,7 @@ AuthType Basic
 AuthName "Введите пароль"
 AuthUserFile /home/h56591/data/realms/er.htpasswd
 Require valid-user
+
+AddType video/mp4 mp4 m4v
+AddType video/ogg ogv
+AddType video/webm webm

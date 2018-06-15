@@ -69,8 +69,8 @@ html(lang='ru')
 
             .promo-overlay   
             .promo.posr 
-                video(autoplay loop)
-                   source(src="video/preview.mp4" type="video/mp4")
+                video(autoplay="autoplay" loop="loop")
+                   source(src="video/preview.mp4" type='video/mp4')
                          
                 .container-fluid.promo__wrap
                     .row.align-items-center
@@ -79,9 +79,9 @@ html(lang='ru')
                         .promo__title.text-justify.text-lg-left.col-lg-9
                             +icon('zn-home','red_mod')                            
                             h2.custom-title 
-                                p ДЕ
-                                p ЛА
-                                p ЕМ
+                                span ДЕ
+                                span ЛА
+                                span ЕМ
                             h1.big-title PR
 
                         .js-button-slider.swiper-container.col-lg-3
