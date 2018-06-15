@@ -1,16 +1,20 @@
 jQuery(document).ready(function($) {
 
-
-  	var cartAdress = $('#map-contacts');
+  	var cartAdress = $('#map-contacts'),
+  		markerIcon = $('#map-contacts').data('marker');
 	setTimeout(function() {
 
 		cartAdress.css({
 			opacity: '1'
 		});
 	 }, 3600)
+
+	var map;
+	initMap();
+	function initMap(){
 	     	
         var uluru = {lat: cartAdress.data('lat') , lng: cartAdress.data('lng')};
-        var map = new google.maps.Map(document.getElementById('map-contacts'), {
+        map = new google.maps.Map(document.getElementById('map-contacts'), {
           zoom: 15,
           center: uluru,
           zoomControl: false,
@@ -22,7 +26,7 @@ jQuery(document).ready(function($) {
         var marker = new google.maps.Marker({
           position: uluru,
           map: map,
-          icon: '../img/contacts/label.png',
+          icon: markerIcon,
           disableDefaultUI: true
         });
 
@@ -207,6 +211,8 @@ jQuery(document).ready(function($) {
 
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
+
+    }
 
 
 });  

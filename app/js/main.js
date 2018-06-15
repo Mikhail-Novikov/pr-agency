@@ -457,7 +457,6 @@ jQuery(document).ready(function($) {
       $('#swipebox-close').css({opacity: 0});
         widthModalOverlay = $(window).width();
 
-        console.log(widthModalOverlay, 'wover');
       setTimeout(function() {
            /* console.log($('#swipebox-slider').find('.current img')["0"].naturalWidth)*/
 

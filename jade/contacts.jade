@@ -31,7 +31,7 @@ html(lang='ru')
 
 
     link(rel='stylesheet', href='css/swiper.min.css')              
-    link(rel='stylesheet', href='css/main.css') 
+    link(rel='stylesheet', href='css/main.css')
 
     script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAMVuRK48e9494g0NDZUYy5VkDqQHoTNdM') 
 
@@ -71,7 +71,7 @@ html(lang='ru')
         main.content.bg-dark.align-items-center.posr
             .block__map
   
-                #map-contacts.container__map( data-lat="55.755236" , data-lng="37.561571" )
+                #map-contacts.container__map( data-lat="55.755236" , data-lng="37.561571" , data-marker="img/contacts/label.png")
 
             section.contacts__block 
                 .container-fluid
@@ -159,6 +159,7 @@ html(lang='ru')
     
 
     include modals/todo.jade
+
 
     script(src='js/jquery.min.js') 
     script(src='js/readmore.min.js')
