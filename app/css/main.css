@@ -8741,7 +8741,7 @@ footer {
     right: 0;
     width: 100%; }
   .news__block-item:hover .nbi-line {
-    border-width: 0 0 8px 0 !important; }
+    border-width: 0 0 8px 0; }
 
 .bg-newspage .ps-btn-title {
   max-width: 440px; }
@@ -10197,7 +10197,8 @@ section {
   max-height: 249px; }
 
 .our-commands .nbi-line {
-  height: 5px; }
+  height: 5px;
+  border-width: 0 0 4px 0 !important; }
 
 .our-commands .oc-name {
   margin: -2px auto 0; }
