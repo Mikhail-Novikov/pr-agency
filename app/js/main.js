@@ -587,5 +587,24 @@ jQuery(document).ready(function($) {
       errorElement: "i"
     });
     $(".js-mask").mask("9 (999) 999-9999"); 
+
+/*    show_success_popup();*/
+
+    function show_success_popup(){
+      $('.js-show-modal-success').css({
+        display: 'block',
+        opacity: '1'
+      });;
+      $('.overlay').fadeIn(400);
+    }
+
+    setTimeout(function() {
+      $('.js-show-modal-success').css({
+        display: 'none',
+        opacity: '0'
+      });;
+      $('.overlay').fadeOut(400);
+    }, 5000)
+
     
 });

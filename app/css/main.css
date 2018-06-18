@@ -9164,6 +9164,16 @@ input.error, textarea.error {
   .modal__video-wrap .swiper-container img {
     margin: 0 auto; }
 
+.js-show-modal-success .modal-content {
+  border: 4px solid #ffbf00;
+  text-align: center; }
+
+.js-show-modal-success .modal-header {
+  border-bottom: none; }
+
+.js-show-modal-success .modal-title {
+  width: 100%; }
+
 /*! Swipebox v1.3.0 | Constantin Saguin csag.co | MIT License | github.com/brutaldesign/swipebox */
 html.swipebox-html {
   overflow: hidden !important; }
