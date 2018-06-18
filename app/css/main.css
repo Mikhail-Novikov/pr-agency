@@ -10847,6 +10847,11 @@ section {
     background-color: #fff; }
   .promo .swiper-scrollbar-drag {
     background-color: #ffbf00; }
+  .promo .custom-title {
+    font-size: 56px; }
+  .promo .big-title {
+    font-size: 220px;
+    letter-spacing: -28.97px; }
   .promo__right-menu .promo-btn-item {
     margin-bottom: 45px;
     height: 66px;
