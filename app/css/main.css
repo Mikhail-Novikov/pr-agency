@@ -10716,17 +10716,18 @@ section {
 .map__block_nav {
   color: #fff;
   padding-bottom: 65px; }
+  .map__block_nav a {
+    font-family: "lava";
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .map__block_nav a:hover {
+      color: #ffbf00 !important; }
   .map__block_nav .map__block_nav-title {
     font-size: 24px;
+    font-family: "lava bold";
     color: #fff; }
   .map__block_nav .map__block_nav-list {
     margin-left: 30px; }
-    .map__block_nav .map__block_nav-list a {
-      font-family: "lava";
-      -webkit-transition: 0.3s;
-      transition: 0.3s; }
-      .map__block_nav .map__block_nav-list a:hover {
-        color: #ffbf00 !important; }
   .map__block_nav .map__block_nav-list > li {
     margin-top: 21px; }
     .map__block_nav .map__block_nav-list > li > ul {
