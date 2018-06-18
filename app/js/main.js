@@ -1,3 +1,4 @@
+var showSuccessPopup;
 jQuery(document).ready(function($) {
   e();
   $(window).resize(function(event) {
@@ -605,7 +606,7 @@ jQuery(document).ready(function($) {
 
   /*  show_success_popup();*/
 
-    function show_success_popup(){
+   showSuccessPopup =   function show_success_popup(){
       //сначало закроем все мод окна
       $('.js-btn-close-modal').trigger('click');
       // скажем что успешно
@@ -625,16 +626,15 @@ jQuery(document).ready(function($) {
       if ((".js-form-validate-job").length) {
         $(".js-form-validate-job").validate(formValidateJobSet);
       }
+      // закроем окно успешно
+      setTimeout(function() {
+        $('.js-show-modal-success').css({
+          display: 'none',
+          opacity: '0'
+        });;
+        $('.overlay-success').fadeOut(400);
+      }, 5000)
 
     }
-      // закроем окно успешно
-    setTimeout(function() {
-      $('.js-show-modal-success').css({
-        display: 'none',
-        opacity: '0'
-      });;
-      $('.overlay-success').fadeOut(400);
-    }, 5000)
-
-    
+  
 });
