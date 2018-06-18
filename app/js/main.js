@@ -507,7 +507,8 @@ jQuery(document).ready(function($) {
 
     
 // валидация формы поставить задачу
-    $(".js-form-validate").validate({
+
+      var formvValidateSet = {
         rules: {
             nic: {
                 required: true,
@@ -549,12 +550,23 @@ jQuery(document).ready(function($) {
         },
 
       errorElement: "i"
+    } 
+
+
+    $(".js-form-validate").validate(formvValidateSet);
+
+    $('.js-form-validate .form-control ').on('keyup blur', function () {
+        if ($('.js-form-validate').valid()) {
+            $('.js-form-send').prop('disabled', false);
+        } else {
+            $('.js-form-send').prop('disabled', 'disabled');
+        }
     });
 
-
 // валидация формы резюме
-    $(".js-form-validate-job").validate({
-        rules: {
+
+    var formValidateJobSet = {
+      rules: {
             nic: {
                 required: true,
                 minlength: 4,
@@ -583,27 +595,45 @@ jQuery(document).ready(function($) {
             }
 
         },
-
       errorElement: "i"
-    });
+    }
+    
+    $(".js-form-validate-job").validate(formValidateJobSet);
+
+    //маска телефона
     $(".js-mask").mask("9 (999) 999-9999"); 
 
-/*    show_success_popup();*/
+  /*  show_success_popup();*/
 
     function show_success_popup(){
+      //сначало закроем все мод окна
+      $('.js-btn-close-modal').trigger('click');
+      // скажем что успешно
       $('.js-show-modal-success').css({
         display: 'block',
         opacity: '1'
       });;
-      $('.overlay').fadeIn(400);
-    }
+      $('.overlay-success').fadeIn(400);
 
+      //запустим валидацию форм снова
+      $(".js-mask").mask("9 (999) 999-9999"); 
+
+      if ((".js-form-validate").length) {
+        $(".js-form-validate").validate(formvValidateSet);
+      }
+
+      if ((".js-form-validate-job").length) {
+        $(".js-form-validate-job").validate(formValidateJobSet);
+      }
+
+    }
+      // закроем окно успешно
     setTimeout(function() {
       $('.js-show-modal-success').css({
         display: 'none',
         opacity: '0'
       });;
-      $('.overlay').fadeOut(400);
+      $('.overlay-success').fadeOut(400);
     }, 5000)
 
     

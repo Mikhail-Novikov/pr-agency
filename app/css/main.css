@@ -8655,6 +8655,9 @@ footer {
     background: url("../svg/sprite/close-black.svg") no-repeat center #fff;
     background-size: 22px; }
 
+.btn.disabled:hover, .btn:disabled:hover {
+  background-color: #ffbf00 !important; }
+
 .collapse-list-info {
   text-align: center;
   font-size: 13px;
@@ -9597,7 +9600,7 @@ section {
   .open-menu .header {
     padding-right: 17px; }
 
-.overlay-modals {
+.overlay-modals, .overlay-success {
   display: none;
   height: 100%;
   left: 0;
