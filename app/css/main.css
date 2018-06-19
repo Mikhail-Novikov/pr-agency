@@ -9172,7 +9172,8 @@ input.error, textarea.error {
   text-align: center; }
 
 .js-show-modal-success .modal-header {
-  border-bottom: none; }
+  border-bottom: none;
+  font-size: 32px; }
 
 .js-show-modal-success .modal-title {
   width: 100%; }

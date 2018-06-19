@@ -604,8 +604,6 @@ jQuery(document).ready(function($) {
     //маска телефона
     $(".js-mask").mask("9 (999) 999-9999"); 
 
-  /*  show_success_popup();*/
-
    showSuccessPopup =   function show_success_popup(){
       //сначало закроем все мод окна
       $('.js-btn-close-modal').trigger('click');
@@ -626,6 +624,16 @@ jQuery(document).ready(function($) {
       if ((".js-form-validate-job").length) {
         $(".js-form-validate-job").validate(formValidateJobSet);
       }
+
+      // Установка disabled кнопки отправить
+      $('.js-form-validate .form-control ').on('keyup blur', function () {
+        if ($('.js-form-validate').valid()) {
+            $('.js-form-send').prop('disabled', false);
+        } else {
+            $('.js-form-send').prop('disabled', 'disabled');
+        }
+      });
+
       // закроем окно успешно
       setTimeout(function() {
         $('.js-show-modal-success').css({
@@ -634,7 +642,6 @@ jQuery(document).ready(function($) {
         });;
         $('.overlay-success').fadeOut(400);
       }, 5000)
-
     }
   
 });
