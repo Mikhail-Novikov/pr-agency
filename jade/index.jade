@@ -69,7 +69,7 @@ html(lang='ru')
 
             .promo-overlay   
             .promo.posr 
-                video(autoplay="autoplay" loop="loop")
+                video#video(autoplay="autoplay" loop="loop" webkit-playsinline playsinline muted poster="img/home-bg.jpg")
                     source(src="video/preview.mp4" type='video/mp4')
                     source(src="video/preview.webm" type='video/webm; codecs="vp8, vorbis"')
                     source(src="video/preview.ogv" type='video/ogv')                        

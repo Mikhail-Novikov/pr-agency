@@ -8447,13 +8447,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "lava";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/Lava/Lava Regular.ttf") format("truetype"); }
+  src: url("../fonts/Lava/Lava.eot?#iefix") format("embedded-opentype"), url("../fonts/Lava/Lava.woff2") format("woff2"), url("../fonts/Lava/Lava.woff") format("woff"), url("../fonts/Lava/Lava.ttf") format("truetype"), url("../fonts/Lava/Lava.svg#lava") format("svg"); }
 
 @font-face {
   font-family: "lava bold";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/Lava/Lava-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lava/Lava-Bold.woff") format("woff"), url("../fonts/Lava/Lava-Bold.ttf") format("truetype"), url("../fonts/Lava/Lava-Bold.svg#lava bold") format("svg"); }
+  src: url("../fonts/Lava/Lava-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lava/Lava-Bold.woff2") format("woff2"), url("../fonts/Lava/Lava-Bold.woff") format("woff"), url("../fonts/Lava/Lava-Bold.ttf") format("truetype"), url("../fonts/Lava/Lava-Bold.svg#lava bold") format("svg"); }
 
 @font-face {
   font-family: "Helvetica Neue";
@@ -9014,7 +9014,10 @@ input.error, textarea.error {
   position: fixed;
   z-index: 9999;
   top: 0;
+  overflow-y: scroll;
   right: 0;
+  height: 100%;
+  overflow-x: hidden;
   background-color: #ffffff;
   display: none; }
 
@@ -9111,7 +9114,7 @@ input.error, textarea.error {
     margin: 0 auto; }
 
 .modal__video {
-  min-width: 374px;
+  min-width: 320px;
   position: fixed;
   z-index: 9999;
   top: 15px;
@@ -9152,7 +9155,7 @@ input.error, textarea.error {
   padding: 0;
   position: absolute;
   width: 95%;
-  margin: 15px;
+  margin: 0;
   max-width: 890px;
   top: 50%;
   left: 50%;
@@ -10969,8 +10972,26 @@ section {
       display: none; } }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /* --- */ }
+@media only screen and (max-width: 360px) {
+  .open-menu .header__block {
+    background-color: #fff;
+    padding-top: 0; }
+    .open-menu .header__block .h__logo, .open-menu .header__block button {
+      margin-top: 15px; }
+    .open-menu .header__block .row {
+      position: relative;
+      z-index: 10000;
+      background-color: #fff; }
+  .modal__todo, .modal__menu {
+    overflow-y: scroll;
+    height: 100%;
+    overflow-x: hidden; }
+  .modal__video-wrap {
+    max-width: 300px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); } }
 
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */

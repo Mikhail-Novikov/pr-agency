@@ -239,9 +239,25 @@
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/* --- */
+@media only screen and (max-width : 360px)
+	.open-menu .header__block
+		background-color: #fff
+		padding-top: 0
+		.h__logo, button
+			margin-top: 15px
+		.row
+			position: relative
+			z-index: 10000
+			background-color: #fff	
+	.modal__todo, .modal__menu
+		overflow-y: scroll
+		height: 100%
+		overflow-x: hidden
 
+	.modal__video-wrap
+		max-width: 300px
+		left: 50%
+		transform: translate(-50%, -50%)
 		
 
 /*==========  Mobile First  ==========*/

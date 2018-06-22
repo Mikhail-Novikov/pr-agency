@@ -1,5 +1,10 @@
 var showSuccessPopup;
 jQuery(document).ready(function($) {
+
+  //Автозапуск видео на ГЛАВНОЙ
+  $('#video').get(0).play();
+
+//------------------------
   e();
   $(window).resize(function(event) {
       e();
