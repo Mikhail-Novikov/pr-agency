@@ -8845,7 +8845,10 @@ footer {
   .video__content-inner .video__content-inner-text {
     color: #fff;
     font-size: 18px;
-    max-width: 250px; }
+    max-width: 250px;
+    max-height: 2.4em;
+    overflow: hidden;
+    margin-bottom: 5px; }
   .video__content-inner .date {
     color: #ffbf00; }
 
@@ -8859,6 +8862,19 @@ footer {
   left: 0;
   right: 0;
   width: 100%; }
+  .video__content-inner-l-area .hide-btn {
+    font-size: 12px;
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transform: translateX(-150px);
+        -ms-transform: translateX(-150px);
+            transform: translateX(-150px); }
+  .video__content-inner-l-area:hover .hide-btn {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
 
 .video__content-inner-h-area {
   text-align: center;
@@ -9014,10 +9030,7 @@ input.error, textarea.error {
   position: fixed;
   z-index: 9999;
   top: 0;
-  overflow-y: scroll;
   right: 0;
-  height: 100%;
-  overflow-x: hidden;
   background-color: #ffffff;
   display: none; }
 

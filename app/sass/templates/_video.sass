@@ -37,17 +37,18 @@
 	background: rgba(0,0,0,0.3)
 .video__content-inner
 	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	color: #fff;
-	height: 100%;
-
-
+	bottom: 0
+	left: 0
+	right: 0
+	color: #fff
+	height: 100%
 	.video__content-inner-text
 		color: #fff	
 		font-size: 18px	
-		max-width: 250px	
+		max-width: 250px
+		max-height: 2.4em
+		overflow: hidden
+		margin-bottom: 5px
 	.date
 		color: $yellow
 
@@ -55,13 +56,21 @@
 	background: rgba(0,0,0,0.7)
 	height: 120px
 	border-left: 5px solid $yellow
-
 	padding: 20px 20px 10px 20px
 	position: absolute
 	bottom: 0
 	left: 0
 	right: 0
 	width: 100%
+	.hide-btn
+		font-size: 12px
+		opacity: 0
+		transition:  0.2s
+		transform: translateX(-150px)		
+	&:hover .hide-btn
+		opacity: 1
+		transform: translateX(0)	
+
 
 .video__content-inner-h-area
 	text-align: center
