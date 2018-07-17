@@ -295,9 +295,10 @@ jQuery(document).ready(function($) {
   var swiper = new Swiper('.js-portfolio-slider', {
     slidesPerView: 8,
     spaceBetween: 0,
+    loop: true,
     setWrapperSize: true,
     autoplay: {
-      delay: 12000,
+      delay: 6000,
     },
     scrollbar: {
       el: '.swiper-scrollbar',
